@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "59bd6341-687c-4984-94ec-223dd23ee42d",
+		"name": "admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369781"
+	},
+	"item": [
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"id\": 3,\r\n    \"emailId\": \"hi@gmail.com\",\r\n    \"password\": \"Hi@12\",\r\n    \"phoneNumber\": \"4248754761\",\r\n    \"failedAttempts\": 0,\r\n    \"lastAttemptTime\": \"2020-04-18T06:30:34\",\r\n    \"locked\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8011/api/newUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"api",
+						"newUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8011/api/allUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"api",
+						"allUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "specifcID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8011/api/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8011",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

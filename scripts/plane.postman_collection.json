@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "efd51214-0f90-4ec3-9327-de5ae85ad574",
+		"name": "plane",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369781"
+	},
+	"item": [
+		{
+			"name": "getData",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/plane",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"plane"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search particular ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8031/api/plane/PL0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"api",
+						"plane",
+						"PL0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"planeMaker\": \"Airbus\",\r\n    \"planeCapacity\": 700,\r\n    \"planeModel\": \"Airbus789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8031/api/plane",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"api",
+						"plane"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"PL0002\",\r\n    \"planeMaker\": \"Airbus\",\r\n    \"planeCapacity\": 350,\r\n    \"planeModel\": \"Airbus76\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8031/api/plane",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8031",
+					"path": [
+						"api",
+						"plane"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
